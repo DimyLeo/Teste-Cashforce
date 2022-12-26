@@ -1,7 +1,7 @@
-const { Users } = require('../models');
+const { User } = require('../models');
 
 const getAllService = async () => {
-  const response = await Users.findAll();
+  const response = await User.findAll();
 
   return response;
 };
