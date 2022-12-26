@@ -1,7 +1,7 @@
-const userService = require('../services/UserService');
+const BuyerService = require('../services/BuyerService');
 
 const getAll = async (_req, res) => {
-  const response = await userService.getAllService();
+  const response = await BuyerService.getAllService();
   return res.status(200).json(response);
 };
 

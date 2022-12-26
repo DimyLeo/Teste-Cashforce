@@ -1,3 +1,4 @@
+// eslint-disable-next-line max-lines-per-function
 module.exports = (sequelize, DataTypes) => {
   const Buyer = sequelize.define('Buyer', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -22,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     situationDate: { type: DataTypes.STRING },
     cnpjId: { type: DataTypes.INTEGER },
     confirm: { type: DataTypes.BOOLEAN },
-    email: { type: DataTypes.STRING }
+    email: { type: DataTypes.STRING },
   },
   {
     timestamps: false,
@@ -31,9 +32,9 @@ module.exports = (sequelize, DataTypes) => {
 
   Buyer.associate = (models) => {
     Buyer.belongsTo(models.Cnpj, {
-      foreignKey: 'cnpjId'
-    })
-  }
+      foreignKey: 'cnpjId',
+    });
+  };
 
   return Buyer;
 };

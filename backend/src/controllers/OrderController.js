@@ -1,7 +1,7 @@
-const userService = require('../services/UserService');
+const orderService = require('../services/OrderService');
 
 const getAll = async (_req, res) => {
-  const response = await userService.getAllService();
+  const response = await orderService.getAllService();
   return res.status(200).json(response);
 };
 
