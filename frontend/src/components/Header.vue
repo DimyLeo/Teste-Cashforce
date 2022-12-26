@@ -1,6 +1,5 @@
 <template>
   <header>
-    <h1>Header</h1>
   </header>
 </template>
 
@@ -11,5 +10,10 @@ export default {
 </script>
 
 <style scoped>
-
+header {
+  background-color: var(--white);
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
 </style>
