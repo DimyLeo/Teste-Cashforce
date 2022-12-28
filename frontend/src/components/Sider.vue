@@ -4,7 +4,7 @@
       <img src="../assets/Logo.svg" alt="logo" class="logo" />
     </div>
     <nav>
-      <router-link to="/">
+      <router-link to="/" class="notas_link">
         <img src="../assets/Notas-fiscais.svg" alt="notas" class="notas" />
       </router-link>
     </nav>
@@ -30,24 +30,32 @@ export default {
   margin: 25px 0px 25px 25px;
 }
 
-.notas {
+.notas_link {
   padding: 5px 25px 5px 25px;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.notas:active {
-  background-color: var(--selected);
+.notas {
+  margin-top: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a.router-link-exact-active {
   border-left: 4px solid var(--green);
   border-radius: 3px;
 }
 
-.notas:hover {
-  background-color: #f4f7fb;
+nav a:hover {
+  background-color: #eff2f5;
 }
 
-.notas:focus {
-  background-color: #f4f7fb;
+nav a:focus {
+  background-color: #eff2f5;
   border: 5px solid #e7ebff;
 }
 </style>
