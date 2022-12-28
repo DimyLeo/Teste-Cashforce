@@ -5,6 +5,7 @@
     </div>
     <div class="page">
       <Header />
+      <router-view />
       <Notas />
     </div>
   </main>
@@ -58,5 +59,6 @@ main {
 
 .page {
   width: 100%;
+  margin-left: 286px;
 }
 </style>

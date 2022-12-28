@@ -24,6 +24,7 @@
         </thead>
 
         <tbody>
+          <!-- <div class="div_body"> -->
           <tr class="tr_tbody" v-for="order in orders" :key="order.id">
             <td class="tbody_v">{{ order.orderNfId }}</td>
             <td class="tbody_v">{{ order.Buyer.name }}</td>
@@ -33,6 +34,7 @@
             <td class="value_status">{{ order.orderStatusBuyer }}</td>
             <td><button class="btn-dados">Dados do Cedente</button></td>
           </tr>
+          <!-- </div> -->
         </tbody>
       </table>
     </div>
@@ -58,7 +60,6 @@ export default {
         .get("/table")
         .then((res) => {
           this.orders = res.data;
-          console.log(res);
         })
         .catch((error) => {
           console.log(error);
@@ -91,13 +92,20 @@ export default {
   margin-right: 8px;
 }
 
+.tr_tbody {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
 table {
+  border-collapse: collapse;
   margin-top: 15px;
+  margin-left: 15px;
 }
 
 table tr th,
 td {
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
 }
 
 thead tr th {
@@ -105,11 +113,8 @@ thead tr th {
   font-size: 12px;
   line-height: 15.62px;
   color: var(--text-table);
-}
-
-.tr_tbody {
-  border: 1px solid black;
-  border-radius: 10px;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .value_status {
