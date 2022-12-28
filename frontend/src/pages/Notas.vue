@@ -24,20 +24,13 @@
         </thead>
 
         <tbody>
-          <!-- <tr class="tr_table" v-for="data of orderReturn" :key="data.id"> -->
-          <tr class="tr_tbody">
-            <!-- <td class="tbody_v">{{ data.orderNfId }}</td> -->
-            <td class="tbody_v">1234</td>
-            <td class="tbody_v">SACADO 001</td>
-            <td class="tbody_v">CEDENTE 002</td>
-            <td class="tbody_v">12/02/2020</td>
-            <td class="value_status">R$ 49.725,00</td>
-            <td class="value_status">RECEBIDO</td>
-            <!-- <td class="tbody_v">
-                {{ new Date(data.emissionDate).toLocaleDateString("pt-BR") }}
-              </td>
-              <td class="value_status">R$ {{ data.value }}</td>
-              <td class="value_status">{{ data.orderStatusBuyer }}</td> -->
+          <tr class="tr_tbody" v-for="order in orders" :key="order.id">
+            <td class="tbody_v">{{ order.orderNfId }}</td>
+            <td class="tbody_v">{{ order.Buyer.name }}</td>
+            <td class="tbody_v">{{ order.Provider.name }}</td>
+            <td class="tbody_v">{{ order.emissionDate }}</td>
+            <td class="value_status">{{ order.value }}</td>
+            <td class="value_status">{{ order.orderStatusBuyer }}</td>
             <td><button class="btn-dados">Dados do Cedente</button></td>
           </tr>
         </tbody>
@@ -47,25 +40,31 @@
 </template>
 
 <script>
-// import { api } from '../api/api.js'
+import { api } from "../api/api.js";
 
 export default {
   name: "Notas-note",
-  // data() {
-  //   return {
-  //     buyerReturn: [],
-  //     providerReturn: [],
-  //     orderReturn: [],
-  //   }
-  // },
-
-  // mounted() {
-  //   api.get('/table').then(response => {
-  //     this.buyerReturn = response.data.buyerReturn
-  //     this.providerReturn = response.data.providerReturn
-  //     this.orderReturn = response.data.orderReturn
-  //   })
-  // }
+  data() {
+    return {
+      orders: [],
+    };
+  },
+  created() {
+    this.getTable();
+  },
+  methods: {
+    getTable() {
+      api
+        .get("/table")
+        .then((res) => {
+          this.orders = res.data;
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
 
@@ -109,7 +108,6 @@ thead tr th {
 }
 
 .tr_tbody {
-  background-color: red;
   border: 1px solid black;
   border-radius: 10px;
 }

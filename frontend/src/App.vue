@@ -30,7 +30,7 @@ export default {
   --black: #000;
   --white: #fff;
   --border: #dfe2eb;
-  --side: #f1f1f1;
+  --side: #fbfdfe;
   --green: #00ad8c;
   --selected: #e4e4e4;
   --blue-text: #021b51;
@@ -48,7 +48,6 @@ export default {
 }
 
 body {
-  background-color: #2d2d2d;
   color: var(--white);
   font-family: "DM Sans", sans-serif;
 }

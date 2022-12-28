@@ -1,18 +1,21 @@
 <template>
   <div class="side">
     <div>
-      <img src='../assets/Logo.svg' alt="logo" class="logo"/>
+      <img src="../assets/Logo.svg" alt="logo" class="logo" />
     </div>
     <nav>
-        <img src='../assets/Notas-fiscais.svg' alt="notas" class="notas"><a href=""></a><img>
+      <img src="../assets/Notas-fiscais.svg" alt="notas" class="notas" /><a
+        href=""
+      ></a
+      ><img />
     </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Sider-side',
-}
+  name: "Sider-side",
+};
 </script>
 
 <style scoped>
