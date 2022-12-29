@@ -7,8 +7,8 @@ Link do Site: <a href='' target="_blank" >Em Breve<a/>
 ## Design:
 
 - Foi passado um Design por Figma para ter como base para construir o front em baixo você pode ver a comparação entre o Figma e o site que eu desenvolvi.
-  <img src='./Figma' alt='Figma' />
-  <img src='./Site_Feito' alt='Site' />
+  <img src='/Figma.png' alt='Figma' />
+  <img src='/Site_Feito.png' alt='Site' />
 
 ---
 
