@@ -43,6 +43,7 @@ export default {
   transition: 0.1s;
 }
 body {
+  background-color: var(--side);
   color: var(--white);
   font-family: "DM Sans", sans-serif;
 }
@@ -51,6 +52,5 @@ main {
 }
 .page {
   width: 100%;
-  margin-left: 286px;
 }
 </style>

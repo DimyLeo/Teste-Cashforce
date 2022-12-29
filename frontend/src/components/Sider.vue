@@ -22,7 +22,6 @@ export default {
   background-color: var(--side);
   color: var(--black);
   width: 288px;
-  position: absolute;
   height: 100%;
 }
 
