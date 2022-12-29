@@ -44,6 +44,7 @@ Uma pagina onde é retornado uma tabela com os dados das Notas Fiscais que estã
 - Dependências do Backend e inicialização:
   - `cd backend`
   - `npm install`
+  - Ultilize o arquivo .env de exemplo dentro da pasta backend para configurar as variaveis e conectar com o bando de dados.
   - `npm run debug`
 
 ---
