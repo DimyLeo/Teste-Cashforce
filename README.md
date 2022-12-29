@@ -1,6 +1,6 @@
 # Teste técnico Cashforce
 
-Esse é o Projeto onde nos disponibilizaram um banco de dados MySQL para realizar o desafio de uma criação de uma API em NodeJS com Sequelize e o Front com VueJS.
+Esse é o Projeto onde a empresa Cashforce disponibilizou um banco de dados MySQL para realizar o desafio de uma criação de uma API em NodeJS com Sequelize e o Front com VueJS.
 
 Link do Site: <a href='' target="_blank" >Em Breve<a/>
 
