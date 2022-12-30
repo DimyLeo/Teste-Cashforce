@@ -2,7 +2,7 @@
 
 Esse é um Projeto onde a empresa Cashforce disponibilizou um banco de dados MySQL para realizar o desafio de uma criação de uma API em NodeJS com Sequelize e o Front com VueJS.
 
-Link do Site: <a href='' target="_blank" >Em Breve<a/>
+Link do Site: <a href='https://cashforce-teste.netlify.app/#/' target="_blank" >https://cashforce-teste.netlify.app/#/<a/>
 
 ## Design:
 
@@ -51,4 +51,4 @@ Uma pagina onde é retornado uma tabela com os dados das Notas Fiscais que estã
 
 ---
 
-Esse é o Projeto que desenvolvi caso queira conferir só entrar no link ao lado. <a href=''>Em Breve</a>
+Esse é o Projeto que desenvolvi caso queira conferir só entrar no link ao lado. <a href='https://cashforce-teste.netlify.app/#/' target="_blank">SITE</a>
