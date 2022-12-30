@@ -1,14 +1,14 @@
 # Teste técnico Cashforce
 
-Esse é o Projeto onde nos disponibilizaram um banco de dados MySQL para realizar o desafio de uma criação de uma API em NodeJS com Sequelize e o Front com VueJS.
+Esse é um Projeto onde a empresa Cashforce disponibilizou um banco de dados MySQL para realizar o desafio de uma criação de uma API em NodeJS com Sequelize e o Front com VueJS.
 
 Link do Site: <a href='' target="_blank" >Em Breve<a/>
 
 ## Design:
 
 - Foi passado um Design por Figma para ter como base para construir o front em baixo você pode ver a comparação entre o Figma e o site que eu desenvolvi.
-  <img src='./Figma' alt='Figma' />
-  <img src='./Site_Feito' alt='Site' />
+  <img src='/Figma.png' alt='Figma' />
+  <img src='/Site_Feito.png' alt='Site' />
 
 ---
 
@@ -16,6 +16,8 @@ Link do Site: <a href='' target="_blank" >Em Breve<a/>
 
 - VueJS
 - NodeJS
+- Express
+- MySQL
 - Sequelize
 - Estilização com CSS3
 
@@ -44,6 +46,7 @@ Uma pagina onde é retornado uma tabela com os dados das Notas Fiscais que estã
 - Dependências do Backend e inicialização:
   - `cd backend`
   - `npm install`
+  - Ultilize o arquivo .env de exemplo dentro da pasta backend para configurar as variaveis e conectar com o bando de dados, ou utilize o docker compose para rodar o backend e coloque apenas o nome do banco de dados no .env.
   - `npm run debug`
 
 ---
