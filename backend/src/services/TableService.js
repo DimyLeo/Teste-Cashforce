@@ -38,7 +38,6 @@ const tableAllService = async () => {
 
     return index;
   });
-
   return orders;
 };
 
