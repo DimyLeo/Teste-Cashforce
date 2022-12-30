@@ -51,4 +51,4 @@ Uma pagina onde é retornado uma tabela com os dados das Notas Fiscais que estã
 
 ---
 
-Esse é o Projeto que desenvolvi caso queira conferir só entrar no link ao lado. <a href='https://cashforce-teste.netlify.app/#/'>SITE</a>
+Esse é o Projeto que desenvolvi caso queira conferir só entrar no link ao lado. <a href='https://cashforce-teste.netlify.app/#/' target="_blank">SITE</a>
