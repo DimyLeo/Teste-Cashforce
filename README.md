@@ -16,6 +16,8 @@ Link do Site: <a href='' target="_blank" >Em Breve<a/>
 
 - VueJS
 - NodeJS
+- Express
+- MySQL
 - Sequelize
 - Estilização com CSS3
 
